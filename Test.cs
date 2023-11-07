@@ -8,6 +8,10 @@ namespace function
 {
      class Test
     {
+        static void PrintResult(int result)
+        {
+            Console.WriteLine("Результат вычисление : " + result);
+        }
         static int Summ(int a, int b)
         {   
             int result = a + b;
@@ -25,8 +29,12 @@ namespace function
             Console.WriteLine("Вводите данный b: ");
 
             b = int.Parse(Console.ReadLine());
-            c = a + b;
-            Console.WriteLine("total : " + c);
+
+            c = Summ(a, b);
+
+            PrintResult(c);
+
+            
         }
     }
 }
