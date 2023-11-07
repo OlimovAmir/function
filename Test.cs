@@ -8,6 +8,11 @@ namespace function
 {
      class Test
     {
+        static int Summ(int a, int b)
+        {   
+            int result = a + b;
+            return result;
+        }
         static void Main(string[] args)
         {
             
